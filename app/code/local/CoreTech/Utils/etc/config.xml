@@ -14,6 +14,8 @@ and open the template in the editor.
         including namespace -->  
         <CoreTech_Utils>
             <version>0.0.1</version> 
+            
+            
         </CoreTech_Utils>
     </modules>
 </config>
