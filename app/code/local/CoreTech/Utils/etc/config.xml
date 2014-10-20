@@ -13,9 +13,35 @@ and open the template in the editor.
         <!-- This node's name has to be the same as module's full name 
         including namespace -->  
         <CoreTech_Utils>
-            <version>0.0.1</version> 
-            
-            
+            <version>0.0.1</version>             
         </CoreTech_Utils>
     </modules>
+    
+    <global>
+        <helpers>
+            <utils>
+                <class>CoreTech_Utils_Helper</class>
+            </utils>
+        </helpers>
+    </global>
+    
+    <frontend>
+        <routers>
+            <coretech_utils>
+                <use>standard</use>
+                <args>
+                    <module>CoreTech_Utils</module>
+                    <frontName>utils</frontName>
+                </args>
+            </coretech_utils>
+            
+            <catalog>
+                <args>
+                    <modules>
+                        <coretech before="Mage_Catalog">CoreTech_Utils</coretech>
+                    </modules>
+                </args>
+            </catalog>
+        </routers>
+    </frontend>
 </config>

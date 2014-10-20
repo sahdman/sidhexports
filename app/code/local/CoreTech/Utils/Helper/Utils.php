@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-class CoreTech_Utils_Helper_Utils
+class CoreTech_Utils_Helper_Utils extends Mage_Core_Helper_Abstract
 {
     public function sayHello() {
         echo 'Helo world';
